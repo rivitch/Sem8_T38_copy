@@ -86,19 +86,10 @@ def rewrite(s):
     #show_tell(s)
     rwr = (int(input("Какую строку хотите изменить? :")))-1
     rwr_1 = (int(input("Что хотите изменить? \n0 - Фамилия \n1 - Имя\n2 - Отчество \n3 - Телефон \n")))
-    #print("s",s[rwr])
-    if  rwr_1 == 0:
-        g = input("Введите фамилию :")
-        s[rwr][0] = g
-    if  rwr_1 == 0:
-        g = input("Введите имя :")
-        s[rwr][1] = g
-    if  rwr_1 == 0:
-        g = input("Введите отчество :")
-        s[rwr][2] = g 
-    if  rwr_1 == 0:
-        g = input("Введите телефон :")
-        s[rwr][3] = g           
+    g = input("Введите данные :")
+    for i in range(4):
+        if rwr_1 == i:
+            s[rwr][i] = g        
     print("s",s[rwr]) 
     with open(filename, "w", encoding="UTF-8") as f:
         for i in range(len(s)):
