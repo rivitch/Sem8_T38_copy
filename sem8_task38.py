@@ -97,6 +97,7 @@ def rewrite(s):
     show_tell(s)
     return
 
+# ----- Меню(с семинара. добавлено рандомный файл и пункты "удалить" и "изменить")   
 if __name__ == "__main__":
     s = load_tel()
     while True:
